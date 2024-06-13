@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Prime Calculator</title>
+</head>
+
+<body>
+<p>This page can be used to find all the primes up to a specific value!</p>
+<div >
+    <h1>Find Prime Numbers</h1>
+    <form action="/primes" >
+        <div>
+            <label for="number" class="form-label">Enter a number:</label>
+            <input type="number" class="form-control" id="number" name="number">
+        </div>
+        <button type="submit">Find Primes</button>
+    </form>
+    <div th:if="${primes != null}">
+        <h2>Prime Numbers up to <span th:text="${number}"></span>:</h2>
+        <ul class="list-group">
+            <li class="list-group-item" th:each="prime : ${primes}">
+                <span th:text="${prime}"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

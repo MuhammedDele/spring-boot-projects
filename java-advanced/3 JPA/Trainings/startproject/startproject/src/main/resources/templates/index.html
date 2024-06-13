@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+.
+<body>.
+<h1>Welcome!</h1>
+<p>
+<h3>Search and choose the training you wish to follow....</h3>
+</p>
+<form action="/searchByTheme" method="GET">
+    <p>
+<!--        <label for="theme">Enter Theme:</label>-->
+<!--        <input type="text" id="theme" name="theme">-->
+        <input type="submit" value="Search by theme">
+    </p>
+</form>
+
+<form action="/advanceSearch" method="get">
+    <p>
+        <input type="submit" value="Advanced search">
+    </p>
+
+</form>
+<p>
+    <a href="/admin">Admin</a>
+</p>
+
+</body>
+</html>.

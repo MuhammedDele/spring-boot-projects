@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+.
+<body>.
+<p><a href="/addPerson">Add a person </a></p>
+<p><a href="/addCustomer">Add a customer</a></p>
+<p><a href="/addEmployee">Add an employee</a></p>
+<p><a href="/addExecutive">Add an executive</a></p>
+<ol>
+    <li th:each="person : ${personList}">
+        <span th:text="${person.name}"></span>
+        <span th:if="${person.class.simpleName == 'Customer'}"
+              th:text="'gets ' + ${person.discount} + ' Discount'"></span>
+        <span th:if="${person.class.simpleName == 'Executive'}"
+              th:text="'has a bonus of ' + ${person.bonus}"></span>
+        <span th:if="${person.class.simpleName == 'Employee'}"
+              th:text="'earns ' + ${person.salary}"></span>
+    </li>
+</ol>
+
+
+
+</body>
+</html>

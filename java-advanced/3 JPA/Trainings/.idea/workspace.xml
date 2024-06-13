@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b4087e3-2f56-4624-a6a6-327bf6dc11aa" name="Changes" comment="implementing CRUD operations">
+      <change afterPath="$PROJECT_DIR$/../startproject/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/model/AmexPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/model/CashPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/model/ElectronicPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/model/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/model/VisaPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/java/fact/it/startproject/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/resources/templates/addCashPayment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4 Inheritance/inheritance/startproject/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../startproject/startproject/src/main/java/fact/it/startproject/controller/BreadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../startproject/startproject/src/main/java/fact/it/startproject/controller/BreadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../startproject/startproject/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../startproject/startproject/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4 Inheritance/startproject - Copy/startproject/src/main/java/fact/it/startproject/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../4 Inheritance/startproject - Copy/startproject/src/main/java/fact/it/startproject/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4 Inheritance/startproject - Copy/startproject/src/main/java/fact/it/startproject/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../4 Inheritance/startproject - Copy/startproject/src/main/java/fact/it/startproject/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4 Inheritance/startproject - Copy/startproject/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../4 Inheritance/startproject - Copy/startproject/src/main/resources/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Thymeleaf HTML file" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MuhammedDele&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/itfactory-tm/2024-2acs-java-advanced-MuhammedDele.git&quot;,
+    &quot;accountId&quot;: &quot;b98e3cb6-68ac-4eb1-b6a2-76dd15e97d49&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2fRg5it83hHfTKDfA0vUsvrN31F" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.startprojectApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mdele/OneDrive - Üsküdar Üniversitesi/Masaüstü/Thomas More/java advanced/2024-2acs-java-advanced-MuhammedDele/3 JPA/Trainings&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="startprojectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="startproject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fact.it.startproject.startprojectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b4087e3-2f56-4624-a6a6-327bf6dc11aa" name="Changes" comment="" />
+      <created>1713769125682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713769125682</updated>
+      <workItem from="1713769127489" duration="10364000" />
+      <workItem from="1714294226193" duration="7340000" />
+      <workItem from="1714306181929" duration="844000" />
+      <workItem from="1714310042311" duration="30000" />
+      <workItem from="1714372409215" duration="604000" />
+      <workItem from="1714381131921" duration="13000" />
+      <workItem from="1714381465360" duration="30000" />
+      <workItem from="1714382218251" duration="105000" />
+      <workItem from="1714382377298" duration="28000" />
+      <workItem from="1714382444857" duration="22000" />
+      <workItem from="1714418657302" duration="11000" />
+      <workItem from="1714418961832" duration="30000" />
+      <workItem from="1714419025491" duration="14000" />
+      <workItem from="1714419128109" duration="13000" />
+      <workItem from="1714421189328" duration="64000" />
+      <workItem from="1714421361648" duration="398000" />
+      <workItem from="1714421977145" duration="116000" />
+      <workItem from="1714422166003" duration="21000" />
+      <workItem from="1718053037530" duration="30000" />
+      <workItem from="1718053103286" duration="9000" />
+      <workItem from="1718053184213" duration="10000" />
+      <workItem from="1718053260816" duration="118000" />
+      <workItem from="1718053845765" duration="103000" />
+      <workItem from="1718098042496" duration="22000" />
+      <workItem from="1718098098106" duration="24000" />
+      <workItem from="1718098152933" duration="28000" />
+      <workItem from="1718118689819" duration="666000" />
+      <workItem from="1718122799533" duration="13000" />
+      <workItem from="1718141464992" duration="70000" />
+      <workItem from="1718141907292" duration="17000" />
+      <workItem from="1718141949206" duration="21000" />
+      <workItem from="1718142872171" duration="7000" />
+      <workItem from="1718144118692" duration="10000" />
+      <workItem from="1718188336707" duration="38000" />
+      <workItem from="1718189030033" duration="12000" />
+    </task>
+    <task id="LOCAL-00001" summary="implementing CRUD operations">
+      <option name="closed" value="true" />
+      <created>1714295313049</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714295313049</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implementing CRUD operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing CRUD operations" />
+  </component>
+</project>

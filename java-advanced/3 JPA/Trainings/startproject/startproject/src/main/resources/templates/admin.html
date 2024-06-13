@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+.
+<body>
+<p>
+    <a href="/add">New</a>
+</p>
+<table border="1">
+    <tr>
+
+        <th>Code</th>
+        <th>Title</th>
+        <th>Theme</th>
+        <th>Options</th>
+    </tr>
+    <tr th:each="training :${trainingList}">
+        <td><a th:href="@{/singleTraining(trainingId=${training.getId()})}" th:text="${training.getCode()}"></a></td>
+
+        <td th:text="${training.getTitle()}"></td>
+        <td th:text="${training.getTheme()}"></td>
+        <td>
+            <a th:href="@{/delete(trainingId=${training.getId()})}">Delete</a>
+            <a th:href="@{/edit(trainingId=${training.getId()})}">Edite</a>
+
+        </td>
+
+    </tr>
+</table>
+</body>
+</html>.

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Title</title>
+</head>
+
+<body>
+<!--<ul>-->
+<!--    <li th:each="property : ${propertyList}">-->
+<!--            <span th:if="${property.getClass().getSimpleName() == 'Apartment'}">-->
+<!--                Apartment (<span th:text="${property.code}"></span>) on floor: <span th:text="${property.floor}"></span> with <span th:text="${property.contractList.size()}"></span> contract(s)-->
+<!--            </span>-->
+<!--        <span th:if="${property.getClass().getSimpleName() == 'House'}">-->
+<!--                <span th:if="${property.townhouse}">-->
+<!--                    Townhouse (<span th:text="${property.code}"></span>)-->
+<!--                </span>-->
+<!--                <span th:if="${!property.townhouse}">-->
+<!--                    Detached house (<span th:text="${property.code}"></span>)-->
+<!--                </span>-->
+<!--                with <span th:text="${property.contractList.size()}"></span> contract(s)-->
+<!--            </span>-->
+<!--        (<a th:href="@{'/addContract/' + ${property.id}}">add contract</a>)-->
+<!--    </li>-->
+<!--</ul>-->
+<h1>Properties</h1>
+<ul>
+    <li th:each="property : ${propertyList}">
+        <span th:text="${property.toString()}"></span>
+        (<a th:href="@{/addContract/{propertyId}(propertyId=${property.getId()})}">add contract</a>)
+    </li>
+</ul>
+
+</body>
+</html>

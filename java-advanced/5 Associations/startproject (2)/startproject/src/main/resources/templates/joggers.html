@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Joggers</h1>
+<table border="1">
+    <tr>
+
+        <th>Bib Number</th>
+        <th>Name</th>
+        <th>Club</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:each="joggers :${joggerList}">
+        <td th:text=" ${joggers.getBibNumber()}"></td>
+
+        <td th:text="${joggers.getName()}"></td>
+        <td th:text="${joggers.getClub()}"></td>
+        <td>
+            <a th:href="@{/deleteJogger(joggerId=${joggers.getId()})}">Delete</a>
+
+        </td>
+
+    </tr>
+</table>
+</body>
+</html>

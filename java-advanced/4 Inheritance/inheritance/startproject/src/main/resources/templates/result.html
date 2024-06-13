@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Result</title>
+</head>
+
+<body>
+<ol>
+    <li th:each="payment : ${paymentList}">
+        <span th:text="${payment.toString()}"></span>
+<!--        <span th:text="${payment.getAmount()}"></span>-->
+<!--        <span th:text="${payment.getCurrency()}"></span>-->
+    </li>
+</ol>
+<div>
+    <a href="/">Home</a>
+</div>
+</body>
+</html>

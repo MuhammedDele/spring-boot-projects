@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Student Filter</title>
+</head>
+
+<body>
+<form action="/student" method="get">
+    <label for="lastName">Last name: </label>
+    <input type="text" name="lastName" id="lastName">
+    <br>
+    <label for="firstName">First name: </label>
+    <input type="text" name="firstName" id="firstName">
+    <br>
+    <label for="age">Age reater than: </label>
+    <input type="number" name="age" id="age">
+    <br>
+    <label for="numberOfCourses">Number of courses greaater than: </label>
+    <input type="number" name="numberOfCourses" id="numberOfCourses">
+    <br>
+    <label for="course">Student with these Courses: </label>
+    <select id="course" name="course">
+        <option value="">Select a course</option>
+        <option th:each="course : ${courses}" th:value="${course.name}" th:text="course.name"></option>
+    </select>
+    <br>
+    <input type="submit" value="Search">
+
+</form>
+
+</body>
+</html>

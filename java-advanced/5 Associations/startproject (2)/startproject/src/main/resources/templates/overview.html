@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+.
+<body>
+<ol>
+    <li th:each="club : ${clubs}">
+        <span th:text="${club.toString()}"></span>
+        <ol>
+            <li>
+                <span>Joggers:</span>
+                <ul>
+                    <li th:each="jogger : ${club.getJoggers()}">
+                        <span th:text="${jogger.getName()}"></span> <!-- Assuming jogger has a getName() method -->
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span>Events:</span>
+                <ul>
+                    <li th:each="event : ${club.getEvents()}">
+<!--                        <span th:text="${}"></span> &lt;!&ndash; Assuming event has a getName() method &ndash;&gt;-->
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ol>
+
+</body>
+</html>.

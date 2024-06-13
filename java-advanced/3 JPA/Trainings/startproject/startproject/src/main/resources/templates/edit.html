@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+.
+<body>
+<h1>Edit a training</h1>
+<form th:action="@{processedit(trainingId=${training.getId()})}" method="post">
+    <p>
+        <label for="code">Code</label>
+        <input type="text" name="code" id="code" th:value="${training.getCode()}">
+    </p>
+    <p>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" th:value="${training.getTitle()}">
+    </p>
+    <p>
+        <label for="title">Theme</label>
+        <input type="text" name="theme" id="theme" th:value="${training.getTheme()}">
+    </p>
+    <p>
+        <input type="submit" value="save" name="save">
+    </p>
+
+</form>
+</body>
+</html>.

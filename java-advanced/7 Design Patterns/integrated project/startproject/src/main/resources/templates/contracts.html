@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    .
+    <title>Title</title>
+</head>
+.
+<body>.
+<h1>Contracts</h1>
+<table border="1">
+    <tr>
+
+        <th>Property</th>
+        <th>Tenant</th>
+        <th>Rental Price</th>
+        <th>Active</th>
+    </tr>
+    <tr th:each="contract :${contractsList}">
+        <td th:text=" ${contract.property.getCode()}"></td>
+
+        <td th:text="${contract.tenant.getName()}"></td>
+        <td th:text="${contract.getRentalPrice()}"></td>
+        <td th:text="${contract.active ? 'Active' : 'Not Active'}">
+        </td>
+
+    </tr>
+</table>
+</body>
+</html>.

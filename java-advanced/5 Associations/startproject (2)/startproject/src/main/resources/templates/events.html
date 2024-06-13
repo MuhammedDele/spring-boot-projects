@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Events</h1>
+<table border="1">
+    <tr>
+
+        <th>Name</th>
+        <th>Year location</th>
+        <th>Club</th>
+        <th>Edit</th>
+    </tr>
+    <tr th:each="event :${eventList}">
+        <td th:text=" ${event.getName()}"></td>
+
+        <td th:text="${event.getYear()}"></td>
+        <td th:text="${event.getClub().toString()}"></td>
+        <td>
+            <a th:href="@{/editEvent(eventId=${event.getId()})}">Edit</a>
+
+        </td>
+
+    </tr>
+</table>
+</body>
+</html>
